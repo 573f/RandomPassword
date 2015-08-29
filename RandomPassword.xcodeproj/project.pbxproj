@@ -11,6 +11,9 @@
 		693E869F1B91122900796E38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693E869E1B91122900796E38 /* Images.xcassets */; };
 		693E86A21B91122900796E38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693E86A01B91122900796E38 /* MainMenu.xib */; };
 		693E86AE1B91122900796E38 /* RandomPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E86AD1B91122900796E38 /* RandomPasswordTests.swift */; };
+		693E86B91B91F9C000796E38 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E86B71B91F9C000796E38 /* MainWindowController.swift */; };
+		693E86BA1B91F9C000796E38 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693E86B81B91F9C000796E38 /* MainWindowController.xib */; };
+		693E86BC1B9204CB00796E38 /* GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E86BB1B9204CB00796E38 /* GeneratePassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,9 @@
 		693E86A71B91122900796E38 /* RandomPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		693E86AC1B91122900796E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		693E86AD1B91122900796E38 /* RandomPasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPasswordTests.swift; sourceTree = "<group>"; };
+		693E86B71B91F9C000796E38 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		693E86B81B91F9C000796E38 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		693E86BB1B9204CB00796E38 /* GeneratePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				693E869E1B91122900796E38 /* Images.xcassets */,
 				693E86A01B91122900796E38 /* MainMenu.xib */,
 				693E869A1B91122900796E38 /* Supporting Files */,
+				693E86B71B91F9C000796E38 /* MainWindowController.swift */,
+				693E86B81B91F9C000796E38 /* MainWindowController.xib */,
+				693E86BB1B9204CB00796E38 /* GeneratePassword.swift */,
 			);
 			path = RandomPassword;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				693E869F1B91122900796E38 /* Images.xcassets in Resources */,
+				693E86BA1B91F9C000796E38 /* MainWindowController.xib in Resources */,
 				693E86A21B91122900796E38 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693E86B91B91F9C000796E38 /* MainWindowController.swift in Sources */,
+				693E86BC1B9204CB00796E38 /* GeneratePassword.swift in Sources */,
 				693E869D1B91122900796E38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
