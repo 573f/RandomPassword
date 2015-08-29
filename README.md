@@ -7,3 +7,9 @@ As written, it's not bad as a first app. It's functional but a bit boring (altho
 ![](https://github.com/573f/RandomPassword/blob/master/images/screenshot_1.png)
 
 We'll have to see if we can make this better (and more useful).
+
+## Password Length
+
+First, we'll add an NSSlider to control the length of the generated password, from 8-32 characters. 
+
+![](https://github.com/573f/RandomPassword/blob/develop/images/password_length.png)
