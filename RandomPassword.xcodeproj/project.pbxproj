@@ -38,6 +38,7 @@
 		693E86B71B91F9C000796E38 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		693E86B81B91F9C000796E38 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		693E86BB1B9204CB00796E38 /* GeneratePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePassword.swift; sourceTree = "<group>"; };
+		693E86BD1B92093500796E38 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 		693E868E1B91122900796E38 = {
 			isa = PBXGroup;
 			children = (
+				693E86BD1B92093500796E38 /* README.md */,
 				693E86991B91122900796E38 /* RandomPassword */,
 				693E86AA1B91122900796E38 /* RandomPasswordTests */,
 				693E86981B91122900796E38 /* Products */,
@@ -408,6 +410,7 @@
 				693E86B31B91122900796E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		693E86B41B91122900796E38 /* Build configuration list for PBXNativeTarget "RandomPasswordTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +419,7 @@
 				693E86B61B91122900796E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
