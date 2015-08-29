@@ -11,6 +11,7 @@ import Cocoa
 class MainWindowController: NSWindowController {
 
     @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var passwordLengthSlider: NSSlider!
     
     override var windowNibName: String? {
         return "MainWindowController"
@@ -23,7 +24,7 @@ class MainWindowController: NSWindowController {
     }
     
     @IBAction func generatePassword(sender: AnyObject) {
-        let length = 16
+        let length = passwordLengthSlider.integerValue
         let password = generateRandomString(length)
         textField.stringValue = password
     }
