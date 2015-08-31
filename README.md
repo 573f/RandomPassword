@@ -13,3 +13,10 @@ We'll have to see if we can make this better (and more useful).
 First, we'll add an NSSlider to control the length of the generated password, from 8-32 characters. 
 
 ![](https://github.com/573f/RandomPassword/blob/develop/images/password_length.png)
+
+## Digits and Special Characters
+
+Finally, we'll add controls (like the length slider) to control the number of digits and/or special characters that will appear in the random password.
+
+![](https://github.com/573f/RandomPassword/blob/master/images/digitsAndSpecials.png)
+
