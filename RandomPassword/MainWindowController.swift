@@ -12,6 +12,9 @@ class MainWindowController: NSWindowController {
 
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var passwordLengthSlider: NSSlider!
+    @IBOutlet weak var lengthTextField: NSTextField!
+    @IBOutlet weak var digitsSlider: NSSlider!
+    @IBOutlet weak var specialsSlider: NSSlider!
     
     override var windowNibName: String? {
         return "MainWindowController"
@@ -25,7 +28,14 @@ class MainWindowController: NSWindowController {
     
     @IBAction func generatePassword(sender: AnyObject) {
         let length = passwordLengthSlider.integerValue
-        let password = generateRandomString(length)
+        let digits = digitsSlider.integerValue
+        let specials = specialsSlider.integerValue
+        
+        let password = generateRandomString(length, digits, specials)
         textField.stringValue = password
+    }
+    
+    @IBAction func updateLength(sender: AnyObject) {
+        self.lengthTextField.stringValue = String(passwordLengthSlider.integerValue)
     }
 }
