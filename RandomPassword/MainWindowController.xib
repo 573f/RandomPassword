@@ -6,7 +6,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RandomPassword" customModuleProvider="target">
             <connections>
+                <outlet property="digitsSlider" destination="Flf-Lg-Hxa" id="hPJ-A8-Yqp"/>
+                <outlet property="lengthTextField" destination="hS7-A5-5vF" id="OQq-UU-bId"/>
                 <outlet property="passwordLengthSlider" destination="O5H-bQ-iKh" id="meA-Fn-uhK"/>
+                <outlet property="specialsSlider" destination="HR7-YJ-sTe" id="b2o-Zw-r48"/>
                 <outlet property="textField" destination="ZQ2-CS-2O6" id="Ruf-L5-AVr"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -40,50 +43,59 @@
                             <action selector="generatePassword:" target="-2" id="Bug-eu-ggj"/>
                         </connections>
                     </button>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-bQ-iKh">
-                        <rect key="frame" x="18" y="98" width="444" height="25"/>
-                        <sliderCell key="cell" state="on" alignment="left" minValue="8" maxValue="32" doubleValue="16.347826086956523" tickMarkPosition="below" numberOfTickMarks="24" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Ixt-7Y-1Ko"/>
-                    </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQ8-FU-vrJ">
-                        <rect key="frame" x="18" y="129" width="115" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password Length:" id="DxU-8s-8Dp">
+                        <rect key="frame" x="18" y="130" width="51" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Length:" id="DxU-8s-8Dp">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-JM-Q08">
-                        <rect key="frame" x="22" y="80" width="12" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="8" id="KUz-Wz-WK4">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-3h-Wyo">
+                        <rect key="frame" x="18" y="98" width="44" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Digits:" id="rVu-wD-Y3V">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SM0-bg-PJo">
-                        <rect key="frame" x="164" y="80" width="20" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="16" id="u3O-1P-8qH">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-Ub-psk">
-                        <rect key="frame" x="311" y="80" width="24" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="24" id="cw6-fF-qsF">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3or-hf-DQy">
+                        <rect key="frame" x="18" y="68" width="61" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Specials:" id="urF-iy-It1">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-A5-5vF">
-                        <rect key="frame" x="440" y="80" width="24" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="32" id="FD0-3i-b2g">
+                        <rect key="frame" x="438" y="130" width="24" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="16" id="FD0-3i-b2g">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-bQ-iKh">
+                        <rect key="frame" x="83" y="127" width="351" height="20"/>
+                        <sliderCell key="cell" state="on" alignment="left" minValue="8" maxValue="32" doubleValue="16.347826086956523" tickMarkPosition="below" sliderType="linear" id="Ixt-7Y-1Ko"/>
+                        <connections>
+                            <action selector="updateLength:" target="-2" id="She-jX-Tkf"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-YJ-sTe">
+                        <rect key="frame" x="83" y="64" width="351" height="20"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="8" doubleValue="2" tickMarkPosition="below" sliderType="linear" id="rdi-lf-bNi"/>
+                        <connections>
+                            <action selector="updateLength:" target="-2" id="ieG-5h-yTm"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Flf-Lg-Hxa">
+                        <rect key="frame" x="83" y="95" width="351" height="20"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="8" doubleValue="2" tickMarkPosition="below" sliderType="linear" id="cna-ca-I2b"/>
+                        <connections>
+                            <action selector="updateLength:" target="-2" id="8fL-gN-DD5"/>
+                        </connections>
+                    </slider>
                 </subviews>
             </view>
             <connections>
