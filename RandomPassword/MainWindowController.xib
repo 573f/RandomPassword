@@ -20,7 +20,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="482" height="210"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="482" height="210"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -77,7 +77,7 @@
                     </textField>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-bQ-iKh">
                         <rect key="frame" x="83" y="127" width="351" height="20"/>
-                        <sliderCell key="cell" state="on" alignment="left" minValue="8" maxValue="32" doubleValue="16.347826086956523" tickMarkPosition="below" sliderType="linear" id="Ixt-7Y-1Ko"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="8" maxValue="32" doubleValue="16.347826086956523" tickMarkPosition="below" sliderType="linear" id="Ixt-7Y-1Ko"/>
                         <connections>
                             <action selector="updateLength:" target="-2" id="She-jX-Tkf"/>
                         </connections>
